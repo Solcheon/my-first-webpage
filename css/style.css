@@ -265,6 +265,7 @@ section {
 .swiper-slide a {
   display: flex;
   gap: 100px;
+  width: 100%;
 }
 .slide-image {
   width: 100%;
