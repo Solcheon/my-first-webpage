@@ -23,11 +23,12 @@ const swHero = new Swiper(".sw-hero", {
       // const activeSilde = swiper.activeIndex + 1;
       // console.log(activeSilde);
       // mainVisualBg.style.backgroundImage = `url(assets/images/slide_${activeSilde}.png)`;
-      const activeSilde = swiper.slides[swiper.activeIndex];
-      // console.log(activeSilde);
-      const activeSildeimg = activeSilde.querySelector(".sildes-image img");
-      // console.log(activeSildeimg.src);
-      mainVisualBg.style.backgroundImage = `url(${activeSildeimg.src})`;
+      const activeSlide = swiper.slides[swiper.activeIndex];
+      // console.log(activeSlide);
+      const activeSlideImgUrl =
+        activeSlide.querySelector(".slide-image img").src;
+      // console.log(activeSlideImg.src);
+      mainVisualBg.style.backgroundImage = `url(${activeSlideImgUrl})`;
     },
   },
 });
