@@ -72,6 +72,16 @@ section {
   height: 100%;
   /* background-color: #fff; */
 }
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+}
+.section-title em {
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* 헤더 영역 시작 */
 .header {
@@ -173,7 +183,7 @@ section {
 /* 메인 영역 시작 */
 .main {
   width: 100%;
-  background-color: wheat;
+  /* background-color: wheat; */
 }
 
 .hero {
@@ -208,8 +218,8 @@ section {
   display: block;
   /* width: 100%; */
   height: 123px;
-  /* background: url("../assets/images/bg_wave.png") no-repeat center; */
-  background-size: contain;
+  background: url("../assets/images/bg_wave.png") no-repeat center;
+  background-size: 100% 100%;
   z-index: 1;
 }
 
@@ -400,15 +410,15 @@ section {
 .hero-prev-btn .on,
 .hero-next-btn .on {
   opacity: 1;
-  transition: opacity 0.2;
+  transition: opacity 0.2s;
 }
 .hero-prev-btn .off,
 .hero-next-btn .off {
   opacity: 0;
-  transition: opacity 0.2;
+  transition: opacity 0.2s;
 }
-.hero-prev-btn.swiper-button-dlsabled,
-.hero-prev-btn.swiper-button-disabled {
+.hero-prev-btn.swiper-button-disabled,
+.hero-next-btn.swiper-button-disabled {
   opacity: 0.35;
   cursor: auto;
   pointer-events: none;
@@ -419,7 +429,7 @@ section {
   left: calc(50% + 140px);
   top: 465px;
   z-index: 100;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   display: flex;
   gap: 8px;
   align-items: center;
@@ -434,18 +444,122 @@ section {
   text-indent: -9999px;
   border-radius: 50%;
 }
+.sw-hero .pagination .swiper-pagination {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 65px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.sw-hero .pagination .swiper-pagination .swiper-pagination-current {
+  /* color: #fff; */
+  font-weight: 700;
+}
+.sw-hero .pagination .swiper-pagination .swiper-pagination-total {
+  /* color: #fff; */
+}
 
+/* 추천축제 키워드 영역 */
 .keywords {
+  position: relative;
   width: 100%;
   height: 85px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
+.keywords .inner {
+  position: relative;
+}
+.keywords .keywords-wrap {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 10;
+}
+
+.keywords .keywords-wrap ul {
+  position: relative;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.keywords .keywords-wrap ul li {
+  position: relative;
+}
+.keywords .keywords-wrap ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px;
+  color: #80808a;
+  border: 1px solid #80808a;
+  border-radius: 20px;
+}
+.keywords .keywords-wrap ul li:hover a {
+  background-color: #7a45e5;
+  color: #fff;
+}
+
 .rank {
+  position: relative;
   width: 100%;
-  height: 384px;
   padding-top: 65px;
-  background-color: steelblue;
+  /* background-color: steelblue; */
 }
+.rank-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  padding-bottom: 105px;
+  display: flex;
+  justify-content: center;
+  background: url("../assets/images/img_keyword.png") left bottom no-repeat;
+  background-size: 342px 284px;
+}
+.rank .inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.rank-list-wrap {
+  position: relative;
+  display: flex;
+  width: calc(100% - 320px);
+  padding-top: 50px;
+}
+.rank-list-wrap > ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.rank-list-wrap > ul:first-child {
+  padding-right: 64px;
+}
+.rank-list-wrap > ul:last-child {
+  padding-left: 64px;
+}
+.rank-list-wrap > ul > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.rank-list-wrap > ul > li > .num {
+  font-size: 14px;
+}
+.rank-list-wrap > ul > li > a {
+  font-size: 20px;
+}
+
 .festival {
   width: 100%;
   height: 507px;
