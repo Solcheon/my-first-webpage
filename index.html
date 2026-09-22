@@ -27,6 +27,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/swHero.js" defer></script>
     <script src="js/swFestival.js" defer></script>
+    <script src="js/swBanner.js" defer></script>
   </head>
 
   <body>
@@ -498,7 +499,7 @@
           <div class="inner">
             <div class="title-wrap">
               <h2 class="section-title">
-                <em>축제의 꽃! </em>
+                <em>축제의 꽃!</em>
                 먹거리 알리오
               </h2>
               <a class="more-btn" href="#">+ More</a>
@@ -563,8 +564,8 @@
                     </div>
                     <div class="text-wrap">
                       <strong>경산 갓바위소원성취축제</strong>
-                      <span class="date">2026.09.19 ~ 2026.09.20 </span>
-                      <span class="location">경상북도 경산시</span>
+                      <span class="date">2026.09.19 ~ 2026.09.20</span>
+                      <span class="location">경산북도 경산시</span>
                     </div>
                   </a>
                 </li>
@@ -585,7 +586,7 @@
                     <div class="text-wrap">
                       <strong>평창농악·산골푸드축제</strong>
                       <span class="date">2026.09.18 ~ 2026.09.20</span>
-                      <span class="location">강원특별자치토 평창군</span>
+                      <span class="location">강원특별자치도 평창군</span>
                     </div>
                   </a>
                 </li>
@@ -594,7 +595,21 @@
           </div>
         </section>
         <section class="banner">
-          <div class="inner">배너 슬라이드 영역</div>
+          <div class="inner">
+            <!-- Swiper -->
+            <div class="pagination">
+              <button class="banner-prev-btn">이전</button>
+              <div class="swiper-pagination"></div>
+              <button class="play-stop-btn">정지</button>
+              <button class="banner-next-btn">다음</button>
+            </div>
+
+            <div class="swiper sw-banner">
+              <div class="swiper-wrapper">
+                <!-- swBanner.js 에서 동적으로 swiper-slide 생성 -->
+              </div>
+            </div>
+          </div>
         </section>
         <section class="theme">
           <div class="inner">테마 축제 영역</div>

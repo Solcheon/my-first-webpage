@@ -1,6 +1,6 @@
 const swFestival = new Swiper(".sw-festival", {
   speed: 350,
-  Loop: true,
+  loop: true,
   slidesPerView: 3.5,
   slidesPerGroup: 1,
   spaceBetween: 32,
